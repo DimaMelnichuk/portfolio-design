@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DimaMelnichuk"
+    "url": "git+https://github.com/DimaMelnichuk/portfolio-design.git"
   },
   "author": "Dima Melnichuk",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/DimaMelnichuk"
+    "url": "https://github.com/DimaMelnichuk/portfolio-design/issues"
   },
-  "homepage": "https://github.com/DimaMelnichuk",
+  "homepage": "https://github.com/DimaMelnichuk/portfolio-design#readme",
   "devDependencies": {
     "browser-sync": "^2.26.7",
     "del": "^5.1.0",
@@ -26,9 +26,5 @@
     "gulp-sass": "^4.0.2",
     "gulp-uglify": "^3.0.2",
     "normalize.css": "^8.0.1"
-  },
-  "dependencies": {
-    "magnific-popup": "^1.1.0",
-    "slick-carousel": "^1.8.1"
   }
 }
