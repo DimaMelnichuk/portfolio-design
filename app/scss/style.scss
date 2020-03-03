@@ -20,7 +20,9 @@ html {
 body {
   font-family: $font-family;
   font-weight: $normal; 
+  background-color: $nav-color;
 }
+::-webkit-scrollbar {display:none;}
 
 ul, ol {
   margin: 0;
@@ -39,12 +41,6 @@ p {
   margin: 0;
   line-height: 22px;
 }
-
-.container {
-	max-width: 1915px;
-	margin: 0 auto;
-	padding: 0 15px;
-}
 /* ==========================================================================
   Header
 ========================================================================== */
@@ -53,12 +49,12 @@ p {
 	height: 100vh;
 	z-index: 3;
 	background-color: $header-bg;
-	width: 300px;
+	width: 17%;
 	text-align: right;
-	box-shadow: 22px 0px 30px 13px rgba(107,112,114,0.6);
+	box-shadow: 15px 0px 35px 10px rgba(0,0,0,0.6);
 
 	@media screen and (max-width: 1366px) {
-		width: 200px;
+		width: 15%;
 	}
 
 }
@@ -69,19 +65,28 @@ p {
 	height: 125px;
 
 	@media (max-width: 1366px) {
-		height: 100px;
+		height: 80px;
 	}
 
 	img {
+		height: 125px;
+		width: 100%;
+		object-fit: cover;
+		object-position: center;
+
 		@media (max-width: 1366px) {
-			width: 200px;
-			height: 100px;
+			height: 80px;
 		}
+
 	}
 
 }
 .menu {
 	margin-bottom: 20px;
+
+	@media (max-width: 1366px) {
+		margin-bottom: 10px;
+	}
 
 	&__link {
 		display: block;
@@ -111,18 +116,34 @@ p {
 	padding-right: 24px;
 	margin-bottom: 20px;
 
+	@media (max-width: 1366px) {
+		padding-right: 24px;
+		margin-bottom: 10px;
+	}
+
 	&__list {
 		display: flex;
 		justify-content: flex-end;
+		flex-wrap: wrap;
 	}
 
-	&__item:not(:last-child) {
-		margin-right: 10px;
+	&__item {
+		margin-left: 10px;
+
+		@media (max-width: 1366px) {
+			margin-left: 5px;
+		}
 	}
 
 	img {
 		height: 25px;
 		width: 25px;
+
+		@media (max-width: 1366px) {
+			height: 19px;
+			width: 19px;
+		}
+
 	}
 }
 .filter {
@@ -131,10 +152,20 @@ p {
 	padding-bottom: 28px;
 	border-bottom: 1px solid #202426;
 
+	@media (max-width: 1366px) {
+		margin-bottom: 13px;
+		padding-bottom: 13px;
+	}
+
 	&__title {
 		color: $green;
 		font-size: 19px;
 		margin-bottom: 20px;
+
+		@media (max-width: 1366px) {
+			font-size: 16px;
+			margin-bottom: 8px;
+		}
 	}
 
 	&__list {
@@ -149,7 +180,12 @@ p {
 		background: none;
 		border: none;
 		cursor: pointer;
+		padding: 0;
 		transition: color .3s;
+
+		@media (max-width: 1366px) {
+			font-size: 14px;
+		}
 
 		&:hover {
 			color: $white;
@@ -166,6 +202,11 @@ p {
 	padding-right: 24px;
 	color: #6b7072;
 	font-size: 12px;
+
+	@media (max-width: 1366px) {
+		font-size: 11px;
+	}
+
 }
 /* ==========================================================================
   Content
@@ -173,20 +214,26 @@ p {
 .content {
 	position: absolute;
 	top: 0;
-	left: 300px;
+	left: 17%;
 	display: flex;
 	flex-wrap: wrap;
-
 	overflow: hidden;
 
+
+
 	@media screen and (max-width: 1366px) {
-		left: 200px;
+		left: 15%;
 	}
 
 	&-item {
 		position: relative;
 		flex-basis: 25%;
 		height: 300px;
+
+		@media (max-width: 1366px) {
+			height: 250px;
+		}
+
 	}
 
 	&__img {
@@ -198,6 +245,11 @@ p {
 			width: 100%;
 			object-position: center;
 			object-fit: cover;
+
+			@media (max-width: 1366px) {
+				height: 250px;
+			}
+
 		}
 
 	}
@@ -226,6 +278,11 @@ p {
 		text-transform: capitalize;
 		max-width: 250px;
 		margin-bottom: 5px;
+
+		@media (max-width: 1366px) {
+			font-size: 20px;
+		}
+
 	}
 
 	&__overlay-descr {
@@ -248,6 +305,12 @@ p {
 			border: 1px solid $white;
 			border-radius: 50%;
 			transition: color .3s, background .3s;
+
+			@media (max-width: 1366px) {
+				height: 45px;
+				width: 45px;
+				line-height: 45px;
+			}
 
 			&:hover {
 				color: $green;
@@ -281,6 +344,12 @@ p {
 		color: $white;
 		font-size: 24px;
 
+		@media (max-width: 1366px) {
+			height: 70px;
+			width: 70px;
+			font-size: 20px;
+		}
+
 		&::after {
 			content: "";
 			position: absolute;
@@ -289,6 +358,12 @@ p {
 			border-radius: 50%;
 			height: 60px;
 			width: 60px;
+
+			@media (max-width: 1366px) {
+				height: 40px;
+				width: 40px;
+			}
+
 		}
 	}
 
@@ -306,6 +381,14 @@ p {
 		width: 285px;
 		padding: 20px;
 		transition: opacity .3s, visibility .3s;
+
+		@media (max-width: 1366px) {
+			top: 70px;
+			font-size: 14px;
+			width: 250px;
+			height: 110px;
+		}
+
 	}
 
 	&__item:not(:last-child) {
