@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script><![endif]-->
 	<meta charset=utf-8>
@@ -9,8 +10,10 @@
 	<link rel="shortcut icon" href="favicon.ico" />
 	<link rel="stylesheet" href="css/style.min.css" />
 </head>
+
 <body>
 
+	<!-- aside-header -->
 	<header class="aside-header">
 		<div class="logo">
 			<a href="#"><img src="img/header/logo1.jpg" alt="logo"></a>
@@ -19,10 +22,10 @@
 			<span></span>
 		</div>
 		<nav class="menu">
-			<ul class="menu__list">                                     
-				<li class="menu__item"><a class="menu__link active" href="#home">home</a></li>
+			<ul class="menu__list">
+				<li class="menu__item"><a class="menu__link active" href="index.html">home</a></li>
 				<li class="menu__item"><a class="menu__link" href="#work">work</a></li>
-				<li class="menu__item"><a class="menu__link" href="#about">about</a></li>
+				<li class="menu__item"><a class="menu__link" href="about.html">about</a></li>
 				<li class="menu__item"><a class="menu__link" href="#blog">blog</a></li>
 				<li class="menu__item"><a class="menu__link" href="#services">services</a></li>
 				<li class="menu__item"><a class="menu__link" href="#contact">contact</a></li>
@@ -31,35 +34,221 @@
 		<div class="filter">
 			<div class="filter__title">Filter</div>
 			<div class="filter__list">
-				<button class="filter__link active" href="#">All Works</button>
-				<button class="filter__link" href="#">web design</button>
-				<button class="filter__link" href="#">illustration</button>
-				<button class="filter__link" href="#">photography</button>
-				<button class="filter__link" href="#">wallpapers</button>
-				<button class="filter__link" href="#">brochu</button>
+				<button class="filter__link mixitup-control-active" href="#" data-filter="all">All Works</button>
+				<button class="filter__link" href="#" data-filter=".web-design">web design</button>
+				<button class="filter__link" href="#" data-filter=".illustration">illustration</button>
+				<button class="filter__link" href="#" data-filter=".photography">photography</button>
+				<button class="filter__link" href="#" data-filter=".wallpapers">wallpapers</button>
+				<button class="filter__link" href="#" data-filter=".brochu">brochu</button>
 			</div>
 		</div>
 		<div class="social-links">
 			<ul class="social-links__list">
-				<li class="social-links__item"><a href="#"><img src="img/header/webicon-flickr.png" alt="webicon-flickr" title="flickr" target="_blank"></a></li>
-				<li class="social-links__item"><a href="#"><img src="img/header/webicon-googleplus.png" alt="webicon-googleplus" title="googleplus" target="_blank"></a></li>
-				<li class="social-links__item"><a href="#"><img src="img/header/webicon-twitter.png" alt="webicon-twitter" title="twitter" target="_blank"></a></li>
-				<li class="social-links__item"><a href="#"><img src="img/header/webicon-pinterest.png" alt="webicon-pinterest" title="pinterest" target="_blank"></a></li>
-				<li class="social-links__item"><a href="#"><img src="img/header/webicon-dribbble.png" alt="webicon-dribbble" title="dribbble" target="_blank"></a></li>
-				<li class="social-links__item"><a href="#"><img src="img/header/webicon-behance.png" alt="webicon-behance" title="behance" target="_blank"></a></li>
-				<li class="social-links__item"><a href="#"><img src="img/header/webicon-facebook.png" alt="webicon-facebook" title="facebook" target="_blank"></a></li>
+				<li class="social-links__item"><a href="#"><img src="img/header/webicon-flickr.png" alt="webicon-flickr"
+							title="flickr" target="_blank"></a></li>
+				<li class="social-links__item"><a href="#"><img src="img/header/webicon-googleplus.png"
+							alt="webicon-googleplus" title="googleplus" target="_blank"></a></li>
+				<li class="social-links__item"><a href="#"><img src="img/header/webicon-twitter.png" alt="webicon-twitter"
+							title="twitter" target="_blank"></a></li>
+				<li class="social-links__item"><a href="#"><img src="img/header/webicon-pinterest.png"
+							alt="webicon-pinterest" title="pinterest" target="_blank"></a></li>
+				<li class="social-links__item"><a href="#"><img src="img/header/webicon-dribbble.png" alt="webicon-dribbble"
+							title="dribbble" target="_blank"></a></li>
+				<li class="social-links__item"><a href="#"><img src="img/header/webicon-behance.png" alt="webicon-behance"
+							title="behance" target="_blank"></a></li>
+				<li class="social-links__item"><a href="#"><img src="img/header/webicon-facebook.png" alt="webicon-facebook"
+							title="facebook" target="_blank"></a></li>
 			</ul>
 		</div>
 		<div class="copiryght">© 2014 Kappe, All Rights Reserved</div>
 	</header>
+	<!-- aside-header end-->
 
+	<!-- content -->
+	<main class="content">
+		<div class="content-item mix all web-design illustration">
+			<div class="content__img">
+				<img src="img/main-content/photo1.jpg" alt="">
+			</div>
+			<div class="content__overlay">
+				<div class="content__overlay-title">cool app design</div>
+				<div class="content__overlay-descr">development, mobile</div>
+				<div class="content__overlay-arrow"><a href="#"><i class="icon-arrow-right"></i></a></div>
+			</div>
+		</div>
+		<div class="content-item mix all illustration wallpapers">
+			<div class="content__img">
+				<img src="img/main-content/photo10.jpg" alt="">
+			</div>
+			<div class="content__overlay">
+				<div class="content__overlay-title">cool app design</div>
+				<div class="content__overlay-descr">development, mobile</div>
+				<div class="content__overlay-arrow"><a href="#"><i class="icon-arrow-right"></i></a></div>
+			</div>
+		</div>
+		<div class="content-item mix all photography">
+			<div class="content__img">
+				<img src="img/main-content/photo3.jpg" alt="">
+			</div>
+			<div class="content__overlay">
+				<div class="content__overlay-title">cool app design</div>
+				<div class="content__overlay-descr">development, mobile</div>
+				<div class="content__overlay-arrow"><a href="#"><i class="icon-arrow-right"></i></a></div>
+			</div>
+		</div>
+		<div class="content-item mix all web-design">
+			<div class="content__img">
+				<img src="img/main-content/photo4.jpg" alt="">
+			</div>
+			<div class="content__overlay">
+				<div class="content__overlay-title">cool app design</div>
+				<div class="content__overlay-descr">development, mobile</div>
+				<div class="content__overlay-arrow"><a href="#"><i class="icon-arrow-right"></i></a></div>
+			</div>
+		</div>
+		<div class="content-item mix all illustration wallpapers web-design">
+			<div class="content__img">
+				<img src="img/main-content/photo5.jpg" alt="">
+			</div>
+			<div class="content__overlay">
+				<div class="content__overlay-title">cool app design</div>
+				<div class="content__overlay-descr">development, mobile</div>
+				<div class="content__overlay-arrow"><a href="#"><i class="icon-arrow-right"></i></a></div>
+			</div>
+		</div>
+		<div class="content-item mix all photography wallpapers">
+			<div class="content__img">
+				<img src="img/main-content/photo6.jpg" alt="">
+			</div>
+			<div class="content__overlay">
+				<div class="content__overlay-title">cool app design</div>
+				<div class="content__overlay-descr">development, mobile</div>
+				<div class="content__overlay-arrow"><a href="#"><i class="icon-arrow-right"></i></a></div>
+			</div>
+		</div>
+		<div class="content-item mix all web-design photography">
+			<div class="content__img">
+				<img src="img/main-content/photo7.jpg" alt="">
+			</div>
+			<div class="content__overlay">
+				<div class="content__overlay-title">cool app design</div>
+				<div class="content__overlay-descr">development, mobile</div>
+				<div class="content__overlay-arrow"><a href="#"><i class="icon-arrow-right"></i></a></div>
+			</div>
+		</div>
+		<div class="content-item mix all illustration web-design">
+			<div class="content__img">
+				<img src="img/main-content/photo8.jpg" alt="">
+			</div>
+			<div class="content__overlay">
+				<div class="content__overlay-title">cool app design</div>
+				<div class="content__overlay-descr">development, mobile</div>
+				<div class="content__overlay-arrow"><a href="#"><i class="icon-arrow-right"></i></a></div>
+			</div>
+		</div>
+		<div class="content-item mix all web-design">
+			<div class="content__img">
+				<img src="img/main-content/photo9.jpg" alt="">
+			</div>
+			<div class="content__overlay">
+				<div class="content__overlay-title">cool app design</div>
+				<div class="content__overlay-descr">development, mobile</div>
+				<div class="content__overlay-arrow"><a href="#"><i class="icon-arrow-right"></i></a></div>
+			</div>
+		</div>
+		<div class="content-item mix all photography wallpapers web-design">
+			<div class="content__img">
+				<img src="img/main-content/photo11.jpg" alt="">
+			</div>
+			<div class="content__overlay">
+				<div class="content__overlay-title">cool app design</div>
+				<div class="content__overlay-descr">development, mobile</div>
+				<div class="content__overlay-arrow"><a href="#"><i class="icon-arrow-right"></i></a></div>
+			</div>
+		</div>
+		<div class="content-item mix all web-design photography">
+			<div class="content__img">
+				<img src="img/main-content/photo13.jpg" alt="">
+			</div>
+			<div class="content__overlay">
+				<div class="content__overlay-title">cool app design</div>
+				<div class="content__overlay-descr">development, mobile</div>
+				<div class="content__overlay-arrow"><a href="#"><i class="icon-arrow-right"></i></a></div>
+			</div>
+		</div>
+		<div class="content-item mix all illustration wallpapers web-design">
+			<div class="content__img">
+				<img src="img/main-content/photo14.jpg" alt="">
+			</div>
+			<div class="content__overlay">
+				<div class="content__overlay-title">cool app design</div>
+				<div class="content__overlay-descr">development, mobile</div>
+				<div class="content__overlay-arrow"><a href="#"><i class="icon-arrow-right"></i></a></div>
+			</div>
+		</div>
+		<div class="content-item mix all photography wallpapers web-design">
+			<div class="content__img">
+				<img src="img/main-content/photo11.jpg" alt="">
+			</div>
+			<div class="content__overlay">
+				<div class="content__overlay-title">cool app design</div>
+				<div class="content__overlay-descr">development, mobile</div>
+				<div class="content__overlay-arrow"><a href="#"><i class="icon-arrow-right"></i></a></div>
+			</div>
+		</div>
+		<div class="content-item mix all web-design photography">
+			<div class="content__img">
+				<img src="img/main-content/photo13.jpg" alt="">
+			</div>
+			<div class="content__overlay">
+				<div class="content__overlay-title">cool app design</div>
+				<div class="content__overlay-descr">development, mobile</div>
+				<div class="content__overlay-arrow"><a href="#"><i class="icon-arrow-right"></i></a></div>
+			</div>
+		</div>
+		<div class="content-item mix all illustration wallpapers web-design">
+			<div class="content__img">
+				<img src="img/main-content/photo14.jpg" alt="">
+			</div>
+			<div class="content__overlay">
+				<div class="content__overlay-title">cool app design</div>
+				<div class="content__overlay-descr">development, mobile</div>
+				<div class="content__overlay-arrow"><a href="#"><i class="icon-arrow-right"></i></a></div>
+			</div>
+		</div>
+		<div class="content-item mix all photography wallpapers web-design">
+			<div class="content__img">
+				<img src="img/main-content/photo11.jpg" alt="">
+			</div>
+			<div class="content__overlay">
+				<div class="content__overlay-title">cool app design</div>
+				<div class="content__overlay-descr">development, mobile</div>
+				<div class="content__overlay-arrow"><a href="#"><i class="icon-arrow-right"></i></a></div>
+			</div>
+		</div>
+	</main>
+	<!-- content end -->
+
+	<!-- contact -->
+	<div class="contact">
+		<div class="contact__info"><i class="icon-info-circle"></i></div>
+		<ul class="contact__list">
+			<li class="contact__item"><a href="tel:993012345679" class="contact__link"><i class="icon-phone"></i>9930 1234
+					5679</a></li>
+			<li class="contact__item"><a href="mailto:contact@domain.com" class="contact__link ="><i
+						class="icon-envelope"></i>contact@domain.com</a></li>
+			<li class="contact__item"><a href="#" class="contact__link"><i class="icon-home"></i>street address example</a>
+			</li>
+		</ul>
+	</div>
+	<!-- contact end -->
 
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script>
-    window.jQuery || document.write('<script src="/js/jquery-3.4.1.min.js"><\/script>')
+		window.jQuery || document.write('<script src="/js/jquery-3.4.1.min.js"><\/script>');
 	</script>
-	<script src="js/libs.min.js"></scr target="_blank"
-	<script src="https://kit.fontawesome.com/3e99ed63dd.js" crossorigin="anonymous"></script>
+	<script src="js/libs.min.js"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>

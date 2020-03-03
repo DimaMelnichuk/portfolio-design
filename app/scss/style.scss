@@ -3,6 +3,7 @@
 @import "partials/libs";
 @import "partials/global";
 @import "partials/vars";
+@import "partials/fonts";
 /* ==========================================================================
 	General Styles
 ========================================================================== */
@@ -48,17 +49,36 @@ p {
   Header
 ========================================================================== */
 .aside-header{
+	position: fixed;
 	height: 100vh;
+	z-index: 3;
 	background-color: $header-bg;
 	width: 300px;
 	text-align: right;
 	box-shadow: 22px 0px 30px 13px rgba(107,112,114,0.6);
+
+	@media screen and (max-width: 1366px) {
+		width: 200px;
+	}
+
 }
 .menu__burger {
 	display: none;
 }
 .logo {
 	height: 125px;
+
+	@media (max-width: 1366px) {
+		height: 100px;
+	}
+
+	img {
+		@media (max-width: 1366px) {
+			width: 200px;
+			height: 100px;
+		}
+	}
+
 }
 .menu {
 	margin-bottom: 20px;
@@ -73,6 +93,11 @@ p {
 		font-size: 18px;
 		font-weight: $light;
 		transition: background-color .3s;
+
+		@media (max-width: 1366px) {
+			padding: 15px 20px;
+			font-size: 16px;
+		}
 
 		&:hover {
 			background-color: $green;
@@ -134,7 +159,7 @@ p {
 .filter__list .filter__link:not(:last-child) {
 	margin-bottom: 8px;
 }
-.filter__list .active {
+.mixitup-control-active {
 	color: $white;
 }
 .copiryght {
@@ -143,13 +168,162 @@ p {
 	font-size: 12px;
 }
 /* ==========================================================================
-  Styles
+  Content
 ========================================================================== */
+.content {
+	position: absolute;
+	top: 0;
+	left: 300px;
+	display: flex;
+	flex-wrap: wrap;
 
+	overflow: hidden;
+
+	@media screen and (max-width: 1366px) {
+		left: 200px;
+	}
+
+	&-item {
+		position: relative;
+		flex-basis: 25%;
+		height: 300px;
+	}
+
+	&__img {
+		position: relative;
+
+		img {
+			height: 300px;
+			max-width: 100%;
+			width: 100%;
+			object-position: center;
+			object-fit: cover;
+		}
+
+	}
+
+	&__overlay {
+		position: absolute;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		opacity: 0;
+		background-color: $green;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		height: 100%;
+		width: 100%;
+		text-align: center;
+		color: $white;
+		transition: opacity .3s;
+	}
+
+	&__overlay-title {
+		font-size: 24px;
+		text-transform: capitalize;
+		max-width: 250px;
+		margin-bottom: 5px;
+	}
+
+	&__overlay-descr {
+		width: 110px;
+		border-bottom: 1px solid $white;
+		font-size: 12px;
+		margin-bottom: 18px;
+		padding-bottom: 16px;
+	}
+
+	&__overlay-arrow {
+		font-size: 19px;
+		
+		a {
+			display: inline-block;
+			color: $white;
+			line-height: 60px;
+			height: 60px;
+			width: 60px;
+			border: 1px solid $white;
+			border-radius: 50%;
+			transition: color .3s, background .3s;
+
+			&:hover {
+				color: $green;
+				background-color: $white;
+			}
+
+		}
+
+	}
+	
+}
+.content-item:hover .content__overlay{
+	opacity: 1;
+}
 /* ==========================================================================
   Styles
 ========================================================================== */
+.contact {
+	position: absolute;
+	top: 0;
+	right: 0;
 
+	&__info {
+		height: 90px;
+		width: 90px;
+		background-color: $green;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		cursor: pointer;
+		color: $white;
+		font-size: 24px;
+
+		&::after {
+			content: "";
+			position: absolute;
+			display: block;
+			border: 1px solid $white;
+			border-radius: 50%;
+			height: 60px;
+			width: 60px;
+		}
+	}
+
+	&__list {
+		position: absolute;
+		opacity: 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		visibility: hidden;
+		top: 90px;
+		right: 0;
+		background-color: rgba(#333333, .7);
+		height: 130px;
+		width: 285px;
+		padding: 20px;
+		transition: opacity .3s, visibility .3s;
+	}
+
+	&__item:not(:last-child) {
+		margin-bottom: 15px;
+	}
+
+	&__link {
+		color: $white;
+
+		i {
+			margin-right: 10px;
+		}
+	}
+}
+.contact__list.active {
+	opacity: 1;
+	visibility: visible;
+}
 /* ==========================================================================
   Styles
 ========================================================================== */
