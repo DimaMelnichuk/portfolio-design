@@ -15,6 +15,15 @@
 		left: 15%;
 	}
 
+	@media screen and (max-width: 850px) {
+		left: 0;
+		top: 60px;
+	}
+
+	@media screen and (max-width: 600px) {
+		margin: 15px;
+		padding: 20px;
+	}
 
 }
 .about__inner {

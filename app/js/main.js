@@ -1,5 +1,11 @@
 $(function(){
  
+	/***************** Menu-btn ********************/
+	$(".menu__burger").click(function(event){
+		$(".menu__burger,.menu").toggleClass("active");
+		});
+	
+
 	 /***************** Info ********************/
 	 $('.contact__info').click(function(event){
 		$('.contact__list').toggleClass('active');
