@@ -4,6 +4,8 @@
 @import "partials/global";
 @import "partials/vars";
 @import "partials/fonts";
+@import "partials/about";
+
 /* ==========================================================================
 	General Styles
 ========================================================================== */
@@ -20,9 +22,13 @@ html {
 body {
   font-family: $font-family;
   font-weight: $normal; 
-  background-color: $nav-color;
+  background-color: #b4b7b8;
+  /* doesn't see the scroll */
+  min-width: 320px;
+  overflow-x: hidden;
 }
-::-webkit-scrollbar {display:none;}
+	/* hidden scroll */
+/* ::-webkit-scrollbar {display:none;} */
 
 ul, ol {
   margin: 0;
@@ -39,8 +45,10 @@ a {
 
 p {
   margin: 0;
-  line-height: 22px;
+  line-height: 30px;
+  color: #a3a3a3;
 }
+
 /* ==========================================================================
   Header
 ========================================================================== */
@@ -218,8 +226,6 @@ p {
 	display: flex;
 	flex-wrap: wrap;
 	overflow: hidden;
-
-
 
 	@media screen and (max-width: 1366px) {
 		left: 15%;
