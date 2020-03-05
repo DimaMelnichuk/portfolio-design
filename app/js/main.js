@@ -7,14 +7,14 @@ $(function(){
 	
 
 	 /***************** Info ********************/
-	 $('.contact__info').click(function(event){
-		$('.contact__list').toggleClass('active');
+	 $('.info__icon').click(function(event){
+		$('.info__list').toggleClass('active');
 	 });
 		 
 		 $(document).mouseup(function (e){ // событие клика по странице
-			if (!$(".contact__info").is(e.target) && // если клик сделан не по элементу
-				 $(".contact__info").has(e.target).length === 0) { // если клик сделан не по вложенным элементам
-				 $(".contact__list").removeClass('active'); // скрываем блок
+			if (!$(".info__icon").is(e.target) && // если клик сделан не по элементу
+				 $(".info__icon").has(e.target).length === 0) { // если клик сделан не по вложенным элементам
+				 $(".info__list").removeClass('active'); // скрываем блок
 			}
 	  });
 

@@ -1,0 +1,79 @@
+@import "vars";
+
+
+.contact {
+	position: relative;
+
+	&__map {
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			object-position: center;
+		}
+	}
+}
+.contact-form {
+	position: absolute;
+	top: 0;
+	left: 17%;
+	padding: 30px;
+	margin: 25px;
+	width: 45%;
+	background-color: $white;
+
+	&__title {
+		font-size: 24px;
+		margin-bottom: 25px;
+	}
+
+	&__descr {
+		color: #a3a3a3;
+		font-size: 18px;
+		line-height: 30px;
+		margin-bottom: 30px;
+		padding-bottom: 30px;
+		border-bottom: 1px solid #e5e5e5;
+	}
+}
+
+.form__inner {
+	display: flex;
+	justify-content: space-between;
+}
+
+.form__column {
+	flex-basis: 49%;
+	display: flex;
+	flex-direction: column;
+
+}
+
+form input,
+form textarea{
+	padding: 23px;
+	border: 1px solid #eaeaea;
+	resize: none;
+	width: 100%;
+}
+form textarea {
+	height: 100%;
+}
+form button {
+	background-color: $green;
+	color: $white;
+	border: none;
+	cursor: pointer;
+	padding: 23px;
+	width: 100%;
+	text-transform: uppercase!important;
+	transition: background-color .3s;
+
+	&:hover {
+		background-color: #48D3BC;
+	}
+}
+::placeholder {
+	color: #a3a3a3;
+}

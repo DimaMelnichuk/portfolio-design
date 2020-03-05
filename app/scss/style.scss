@@ -5,6 +5,7 @@
 @import "partials/vars";
 @import "partials/fonts";
 @import "partials/about";
+@import "partials/contact";
 
 /* ==========================================================================
 	General Styles
@@ -376,12 +377,12 @@ p {
 /* ==========================================================================
   Styles
 ========================================================================== */
-.contact {
+.info {
 	position: absolute;
 	top: 0;
 	right: 0;
 
-	&__info {
+	&__icon {
 		height: 90px;
 		width: 90px;
 		background-color: $green;
@@ -451,7 +452,7 @@ p {
 		}
 	}
 }
-.contact__list.active {
+.info__list.active {
 	opacity: 1;
 	visibility: visible;
 }
