@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'icomoon';
-	src:  url('../fonts/icomoon.eot?px8nwn');
-	src:  url('../fonts/icomoon.eot?px8nwn#iefix') format('embedded-opentype'),
-	  url('../fonts/icomoon.ttf?px8nwn') format('truetype'),
-	  url('../fonts/icomoon.woff?px8nwn') format('woff'),
-	  url('../fonts/icomoon.svg?px8nwn#icomoon') format('svg');
+	src:  url('../../fonts/icomoon.eot?o4h34h');
+	src:  url('../../fonts/icomoon.eot?o4h34h#iefix') format('embedded-opentype'),
+	  url('../../fonts/icomoon.ttf?o4h34h') format('truetype'),
+	  url('../../fonts/icomoon.woff?o4h34h') format('woff'),
+	  url('../../fonts/icomoon.svg?o4h34h#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 	font-display: block;
@@ -25,10 +25,11 @@
 	-moz-osx-font-smoothing: grayscale;
  }
  
+ .icon-heart:before {
+	content: "\f004";
+ }
  .icon-user:before {
 	content: "\f007";
-	color: #000;
-	z-index: 999;
  }
  .icon-home:before {
 	content: "\f015";
@@ -38,6 +39,15 @@
  }
  .icon-arrow-right:before {
 	content: "\f061";
+ }
+ .icon-arrow-left:before {
+	content: "\f060";
+ }
+ .icon-calendar:before {
+	content: "\f073";
+ }
+ .icon-comment:before {
+	content: "\f075";
  }
  .icon-phone:before {
 	content: "\f095";

@@ -1,0 +1,13 @@
+@import "../vars";
+
+.blog {
+	margin: 25px;
+	position: absolute;
+	left: 17%;
+}
+
+.blog__inner {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}

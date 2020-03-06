@@ -6,6 +6,8 @@
 @import "partials/fonts";
 @import "partials/about";
 @import "partials/contact";
+@import "partials/single-page";
+@import "partials/blog/gallery-post";
 
 /* ==========================================================================
 	General Styles
@@ -50,6 +52,10 @@ p {
   color: #a3a3a3;
 }
 
+img {
+	object-fit: cover;
+	object-position: center;
+}
 /* ==========================================================================
   Header
 ========================================================================== */
