@@ -3,12 +3,13 @@
 
 .gallery-post {
 	background-color: $white;
-	max-width: 295px;
+	flex-basis: 30%;
 	// .gallery-post__slider
 
 	&__slider {
 		position: relative;
 		overflow: hidden;
+		width: 295px;
 	}
 
 	// .gallery-post__slider-item
