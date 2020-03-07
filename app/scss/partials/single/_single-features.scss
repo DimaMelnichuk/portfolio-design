@@ -1,0 +1,18 @@
+@import "../vars";
+
+.post-features {
+
+	// .post-features__item
+
+	&__item {
+		color: #848484;
+		margin-bottom: 20px;
+
+		&::before {
+			content: "\f00c";
+			font-family: 'icomoon';
+			padding-right: 8px;
+		}
+
+	}
+}

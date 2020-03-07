@@ -6,7 +6,17 @@
 @import "partials/fonts";
 @import "partials/about";
 @import "partials/contact";
-@import "partials/single-page";
+
+/* single work and post */
+@import "partials/single/single-general";
+@import "partials/single/single-post";
+@import "partials/single/single-tags";
+@import "partials/single/single-archives";
+@import "partials/single/single-gallery";
+@import "partials/single/single-projects";
+@import "partials/single/single-features";
+
+/* blog */
 @import "partials/blog/gallery-post";
 @import "partials/blog/general-blog";
 @import "partials/blog/link-post";

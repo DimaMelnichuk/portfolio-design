@@ -1,0 +1,19 @@
+@import "../vars";
+
+.post-gallery {
+	margin-bottom: 20px;
+	// .post-gallery__img
+
+	&__img {
+		display: flex;
+		flex-wrap: wrap;
+
+		img {
+			height: 78px;
+			width: 78px;
+			margin-bottom: 10px;
+			margin-right: 10px;
+		}
+	}
+}
+
