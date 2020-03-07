@@ -1,0 +1,16 @@
+@import "../vars";
+@import "general-blog";
+
+.video-post {
+	background-color: $white;
+	margin-bottom: 25px;
+	// .video-post__video
+
+	&__video {
+		width: 100%;
+		
+		video {
+			width: 100%;
+		}
+	}
+}
