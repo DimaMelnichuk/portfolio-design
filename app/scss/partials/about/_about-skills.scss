@@ -1,0 +1,44 @@
+.skills__inner {
+	margin-bottom: 30px;
+}
+.skills-item {
+	margin-bottom: 15px;
+}
+.skills-title {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 8px;
+
+	@media (max-width: 1366px) {
+		margin-bottom: 5px;
+	}
+
+	&__job {
+		text-transform: capitalize;
+	}
+
+	&__percent {
+		color: #000;
+	}
+
+}
+.skills-meter {
+	border: 1px solid #e2e2e2;
+	height: 34px;
+	position: relative;
+
+	@media (max-width: 1366px) {
+		height: 25px;
+	}
+
+	span {
+		position: absolute;
+		background-color: #e2e2e2;
+		height: 32px;
+
+		@media (max-width: 1366px) {
+			height: 23px;
+		}
+	}
+
+}

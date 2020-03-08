@@ -1,11 +1,31 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:100,300,700);
 // Imports
 @import "partials/libs";
-@import "partials/global";
 @import "partials/vars";
 @import "partials/fonts";
-@import "partials/about";
-@import "partials/contact";
+
+/* home-content */
+@import "partials/home/content";
+
+/* info */
+@import "partials/info";
+
+/* aside-header */
+@import "partials/aside-header/copiryght";
+@import "partials/aside-header/filter";
+@import "partials/aside-header/header";
+@import "partials/aside-header/social-links";
+
+/* contact */
+@import "partials/contact/contact";
+
+/* about */
+@import "partials/about/about-general";
+@import "partials/about/about-services";
+@import "partials/about/about-skills";
+@import "partials/about/about-staff";
+@import "partials/about/about-testimonials";
+@import "partials/about/about-info";
 
 /* single work and post */
 @import "partials/single/single-general";
@@ -15,6 +35,7 @@
 @import "partials/single/single-gallery";
 @import "partials/single/single-projects";
 @import "partials/single/single-features";
+@import "partials/single/single-info";
 
 /* blog */
 @import "partials/blog/gallery-post";
@@ -66,7 +87,6 @@ a {
 
 p {
   margin: 0;
-  line-height: 30px;
   color: #a3a3a3;
 }
 
@@ -74,440 +94,11 @@ img {
 	object-fit: cover;
 	object-position: center;
 }
-/* ==========================================================================
-  Header
-========================================================================== */
-.aside-header{
-	position: fixed;
-	height: 100vh;
-	z-index: 3;
-	background-color: $header-bg;
-	width: 17%;
-	text-align: right;
-	box-shadow: 15px 0px 35px 10px rgba(0,0,0,0.6);
 
-	@media screen and (max-width: 1366px) {
-		width: 15%;
-	}
-
-	@media screen and (max-width: 850px) {
-		width: 100%;
-		height: 60px;
-		display: flex;
-	}
-
+.btn {
+	display: inline-block;
+	text-transform: capitalize;
+	transition: all .3s;
 }
-.menu__burger {
-	display: none;
-}
-.logo {
-	height: 125px;
-
-	@media (max-width: 1366px) {
-		height: 80px;
-	}
-
-	@media screen and (max-width: 850px) {
-		width: 100px;
-		height: 60px;
-		z-index: 3;
-	}
-
-	img {
-		height: 125px;
-		width: 100%;
-		object-fit: cover;
-		object-position: center;
-
-		@media (max-width: 1366px) {
-			height: 80px;
-		}
-
-		@media screen and (max-width: 850px) {
-			height: 60px;
-		}
-
-	}
-
-}
-.menu {
-	margin-bottom: 20px;
-
-	@media (max-width: 1366px) {
-		margin-bottom: 10px;
-	}
-
-	&__link {
-		display: block;
-		text-transform: uppercase;
-		background-color: #2f373b;
-		border-bottom: 1px solid #202426;
-		padding: 24px 24px;
-		color: $white;
-		font-size: 18px;
-		font-weight: $light;
-		transition: background-color .3s;
-
-		@media (max-width: 1366px) {
-			padding: 15px 20px;
-			font-size: 16px;
-		}
-
-		&:hover {
-			background-color: $green;
-		}
-	}
-}
-.menu__link.active {
-	background-color: $green;
-}
-.social-links {
-	padding-right: 24px;
-	margin-bottom: 20px;
-
-	@media (max-width: 1366px) {
-		padding-right: 24px;
-		margin-bottom: 10px;
-	}
-
-	@media screen and (max-width: 850px) {
-		display: none;
-	}
-
-	&__list {
-		display: flex;
-		justify-content: flex-end;
-		flex-wrap: wrap;
-
-	}
-
-	&__item {
-		margin-left: 10px;
-
-		@media (max-width: 1366px) {
-			margin-left: 5px;
-		}
-	}
-
-	img {
-		height: 25px;
-		width: 25px;
-
-		@media (max-width: 1366px) {
-			height: 19px;
-			width: 19px;
-		}
-
-	}
-}
-.filter {
-	padding-right: 24px;
-	margin-bottom: 28px;
-	padding-bottom: 28px;
-	border-bottom: 1px solid #202426;
-
-	@media (max-width: 1366px) {
-		margin-bottom: 13px;
-		padding-bottom: 13px;
-	}
-
-	@media screen and (max-width: 850px) {
-		display: none;
-	}
-
-	&__title {
-		color: $green;
-		font-size: 19px;
-		margin-bottom: 20px;
-
-		@media (max-width: 1366px) {
-			font-size: 16px;
-			margin-bottom: 8px;
-		}
-	}
-
-	&__list {
-		display: flex;
-		flex-direction: column;
-	}
-
-	&__link {
-		text-align: right;
-		color: #666b6d;
-		outline: none;
-		background: none;
-		border: none;
-		cursor: pointer;
-		padding: 0;
-		transition: color .3s;
-
-		@media (max-width: 1366px) {
-			font-size: 14px;
-		}
-
-		&:hover {
-			color: $white;
-		}
-	}
-}
-.filter__list .filter__link:not(:last-child) {
-	margin-bottom: 8px;
-}
-.mixitup-control-active {
-	color: $white;
-}
-.copiryght {
-	padding-right: 24px;
-	color: #6b7072;
-	font-size: 12px;
-
-	@media (max-width: 1366px) {
-		font-size: 11px;
-	}
-
-	@media screen and (max-width: 850px) {
-		display: none;
-	}
-
-}
-/* ==========================================================================
-  Content
-========================================================================== */
-.content {
-	position: absolute;
-	top: 0;
-	left: 17%;
-	display: flex;
-	flex-wrap: wrap;
-	overflow: hidden;
-
-	@media screen and (max-width: 1366px) {
-		left: 15%;
-	}
-
-	@media screen and (max-width: 850px) {
-		left: 0;
-		top: 60px;
-	}
-
-	&-item {
-		position: relative;
-		flex-basis: 25%;
-		height: 300px;
-
-		@media (max-width: 1366px) {
-			height: 250px;
-		}
-
-		@media screen and (max-width: 850px) {
-			flex-basis: 50%;
-		}
-
-		@media screen and (max-width: 400px) {
-			flex-basis: 100%;
-		}
-
-	}
-
-	&__img {
-		position: relative;
-
-		img {
-			height: 300px;
-			max-width: 100%;
-			width: 100%;
-			object-position: center;
-			object-fit: cover;
-
-			@media (max-width: 1366px) {
-				height: 250px;
-			}
-
-		}
-
-	}
-
-	&__overlay {
-		position: absolute;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		opacity: 0;
-		background-color: $green;
-		top: 0;
-		left: 0;
-		bottom: 0;
-		right: 0;
-		height: 100%;
-		width: 100%;
-		text-align: center;
-		color: $white;
-		transition: opacity .3s;
-	}
-
-	&__overlay-title {
-		font-size: 24px;
-		text-transform: capitalize;
-		max-width: 250px;
-		margin-bottom: 5px;
-
-		@media (max-width: 1366px) {
-			font-size: 20px;
-		}
-
-	}
-
-	&__overlay-descr {
-		width: 110px;
-		border-bottom: 1px solid $white;
-		font-size: 12px;
-		margin-bottom: 18px;
-		padding-bottom: 16px;
-	}
-
-	&__overlay-arrow {
-		font-size: 19px;
-		
-		a {
-			display: inline-block;
-			color: $white;
-			line-height: 60px;
-			height: 60px;
-			width: 60px;
-			border: 1px solid $white;
-			border-radius: 50%;
-			transition: color .3s, background .3s;
-
-			@media (max-width: 1366px) {
-				height: 45px;
-				width: 45px;
-				line-height: 45px;
-			}
-
-			&:hover {
-				color: $green;
-				background-color: $white;
-			}
-
-		}
-
-	}
-	
-}
-.content-item:hover .content__overlay{
-	opacity: 1;
-}
-/* ==========================================================================
-  Styles
-========================================================================== */
-.info {
-	position: absolute;
-	top: 0;
-	right: 0;
-
-	&__icon {
-		height: 90px;
-		width: 90px;
-		background-color: $green;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		cursor: pointer;
-		color: $white;
-		font-size: 24px;
-
-		@media (max-width: 1366px) {
-			height: 70px;
-			width: 70px;
-			font-size: 20px;
-		}
-
-		&::after {
-			content: "";
-			position: absolute;
-			display: block;
-			border: 1px solid $white;
-			border-radius: 50%;
-			height: 60px;
-			width: 60px;
-
-			@media (max-width: 1366px) {
-				height: 40px;
-				width: 40px;
-			}
-
-		}
-	}
-
-	&__list {
-		position: absolute;
-		opacity: 0;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		visibility: hidden;
-		top: 90px;
-		right: 0;
-		background-color: rgba(#333333, .7);
-		height: 130px;
-		width: 285px;
-		padding: 20px;
-		transition: opacity .3s, visibility .3s;
-
-		@media (max-width: 1366px) {
-			top: 70px;
-			font-size: 14px;
-			width: 250px;
-			height: 110px;
-		}
-
-	}
-
-	&__item:not(:last-child) {
-		margin-bottom: 15px;
-	}
-
-	&__link {
-		color: $white;
-
-		i {
-			margin-right: 10px;
-		}
-	}
-}
-.info__list.active {
-	opacity: 1;
-	visibility: visible;
-}
-/* ==========================================================================
-  Styles
-========================================================================== */
-
-/* ==========================================================================
-  Styles
-========================================================================== */
-
-/* ==========================================================================
-  Styles
-========================================================================== */
-
-/* ==========================================================================
-  Styles
-========================================================================== */
-
-/* ==========================================================================
-  Styles
-========================================================================== */
-
-/* ==========================================================================
-  Styles
-========================================================================== */
-
-
-
-
-
-
 
 @import "partials/media";

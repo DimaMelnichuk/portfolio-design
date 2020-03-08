@@ -8,6 +8,10 @@
 		color: #848484;
 		margin-bottom: 20px;
 
+		@media (max-width: 1366px) {
+			margin-bottom: 10px;
+		}
+
 		&::before {
 			content: "\f00c";
 			font-family: 'icomoon';

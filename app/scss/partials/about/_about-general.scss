@@ -1,7 +1,4 @@
-@import "../vars";
-
-.single-page,
-.single-work {
+.about {
 	background-color: $white;
 	position: absolute;
 	top: 0;
@@ -25,9 +22,7 @@
 	}
 
 }
-
-.single-page__inner,
-.single-work__inner {
+.about__inner {
 	display: flex;
 	position: relative;
 	justify-content: space-between;
@@ -52,8 +47,7 @@
 
 	}
 }
-.single-page__column,
-.single-work__column {
+.about__column {
 	flex-basis: 48%;
 	max-width: 48%;
 	display: flex;
@@ -61,42 +55,5 @@
 
 	@media (max-width: 900px) {
 		max-width: 100%;
-		flex-basis: 100%;
 	}
-}
-
-.single__title {
-	font-size: 24px;
-	text-transform: capitalize;
-	margin-bottom: 20px;
-	color: #000;
-
-	@media (max-width: 1366px) {
-		font-size: 20px;
-		margin-bottom: 15px;
-	}
-}
-
-.single__text {
-	margin-bottom: 30px;
-	padding-bottom: 30px;
-	font-size: 18px;
-	line-height: 30px;
-	border-bottom: 1px solid #e5e5e5;
-
-	@media (max-width: 1366px) {
-		font-size: 16px;
-		margin-bottom: 20px;
-		padding-bottom: 20px;
-		line-height: 25px;
-	}
-
-	p:last-child {
-		padding-top: 35px;
-
-		@media (max-width: 1366px) {
-			padding-top: 20px;
-		}
-	}
-
 }

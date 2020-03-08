@@ -1,0 +1,41 @@
+@import "../../partials/vars";
+
+.social-links {
+	padding-right: 24px;
+	margin-bottom: 20px;
+
+	@media (max-width: 1366px) {
+		padding-right: 24px;
+		margin-bottom: 10px;
+	}
+
+	@media screen and (max-width: 850px) {
+		display: none;
+	}
+
+	&__list {
+		display: flex;
+		justify-content: flex-end;
+		flex-wrap: wrap;
+
+	}
+
+	&__item {
+		margin-left: 10px;
+
+		@media (max-width: 1366px) {
+			margin-left: 5px;
+		}
+	}
+
+	img {
+		height: 25px;
+		width: 25px;
+
+		@media (max-width: 1366px) {
+			height: 19px;
+			width: 19px;
+		}
+
+	}
+}

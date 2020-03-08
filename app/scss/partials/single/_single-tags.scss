@@ -3,13 +3,18 @@
 .post-tags {
 	margin-bottom: 30px;
 
+	@media (max-width: 1366px) {
+		margin-bottom: 20px;
+	}
+
 	&__list {
 		display: flex;
 		flex-wrap: wrap;
 	}
 
-	&__item:not(:last-child) {
+	&__item {
 		margin-right: 10px;
+		margin-bottom: 10px;
 	}
 
 	&__link {
@@ -19,6 +24,11 @@
 		border-radius: 11px;
 		color: #a3a3a3;
 		transition: background-color .3s;
+
+		@media (max-width: 1366px) {
+			padding: 7px;
+			font-size: 13px;
+		}
 
 		&:hover {
 			background-color: #dbdbdb;
