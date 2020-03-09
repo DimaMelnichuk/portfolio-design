@@ -14,12 +14,21 @@
 		@media (max-width: 1366px) {
 			max-width: 300px;
 		}
+
+		@media (max-width: 480px) {
+			max-width: 428px;
+			height: 230px;
+		}
 	}
 
 	// .gallery-post__slider-item
 
 	&__slider-item {
 		height: 200px;
+
+		@media (max-width: 480px) {
+			height: 230px;
+		}
 		
 		img {
 			width: 100%;

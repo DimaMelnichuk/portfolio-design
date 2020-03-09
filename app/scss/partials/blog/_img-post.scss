@@ -10,7 +10,7 @@
 	}
 
 	&__img {
-		height: 307px;
+		height: 295px;
 
 		img {
 			width: 100%;
@@ -44,6 +44,13 @@
 			border-radius: 50%;
 			color: $white;
 			transition: color .3s, background-color .3s;
+
+			@media (max-width: 1366px) {
+				height: 50px;
+				width: 50px;
+				font-size: 30px;
+				line-height: 50px;
+			}
 
 			&:hover {
 				color: $green;

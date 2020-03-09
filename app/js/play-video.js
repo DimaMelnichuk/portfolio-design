@@ -6,6 +6,6 @@ $(function(){
 	 });
 	 $("body").on("mouseleave", "video", function(){
 		this.pause();
-	 })
+	 });
 
 });
