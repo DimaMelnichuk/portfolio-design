@@ -2,6 +2,9 @@
 
 .single-projects {
 
+	@media (max-width: 900px) {
+		margin-bottom: 25px;
+	}
 	// .single-projects__img
 
 	&__img {
