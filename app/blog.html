@@ -66,7 +66,8 @@
 
 
 	<div class="blog">
-		<div class="blog__inner">
+		<div class="blog__inner" id="data-container">
+
 				<!-- gallery-post -->
  				<div class="gallery-post">
 					<div class="gallery-post__slider">
@@ -141,6 +142,7 @@
 				<!-- quota-post -->
 				<div class="quota-post">
 					<div class="quota-post__text">Logic will get you from A to B. Imagination will take you everywhere.</div>
+					<div class="quota-post__quote"></div>
 					<div class="quota-post__author">Albert Einstein</div>
 				</div>
 				<!-- quota-post end -->
@@ -199,8 +201,12 @@
 				</div> 
 				<!-- gallery-post end -->
 
+				<div id="loading-div">
+					  
+				</div>
+					
 		</div>
-		<a class="button-blog" href="#">older posts</a>
+		<div class="button-blog" href="#" onclick="lazyload.load()">older posts</div>
 	</div>
 
 
@@ -231,6 +237,7 @@
 	<script src="js/slick-slider.js"></script>
 	<script src="js/play-video.js"></script>
 	<script src="js/info.js"></script>
+	<script src="js/lazyload.js"></script>
 	<script src="https://kit.fontawesome.com/3e99ed63dd.js" crossorigin="anonymous"></script>
 </body>
 

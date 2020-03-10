@@ -5,6 +5,7 @@
 .button-blog {
 	display: block;
 	position: absolute;
+	cursor: pointer;
 	bottom: -100px;
 	left: 50%;
 	transform: translate(-50%);
@@ -31,3 +32,8 @@
 	}
 
 }
+
+#loading-div {
+	display: none;
+}
+	

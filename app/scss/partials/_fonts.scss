@@ -1,4 +1,14 @@
 @font-face {
+	font-family: 'Georgia';
+	src: url('../../fonts/Georgia.woff2') format('woff2'),
+		 url('../../fonts/Georgia.ttf') format('ttf'),
+		 url('../../fonts/Georgia.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+@font-face {
 	font-family: 'icomoon';
 	src:  url('../../fonts/icomoon.eot?makwmm');
 	src:  url('../../fonts/icomoon.eot?makwmm#iefix') format('embedded-opentype'),
