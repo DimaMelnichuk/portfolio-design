@@ -1,24 +1,10 @@
 .about-testi {
 	margin-bottom: 39px;
-	min-width: 0;
-	max-width: 538px;
 }
 .testi-slider {
-	max-width: 495px;
-	min-width: 0;
 	border: 1px solid #e2e2e2;
-
-	@media (max-width: 900px) {
-		max-width: 538px;
-	}
-
-	@media (max-width: 675px) {
-		max-width: 300px;
-	}
-
-	@media (max-width: 675px) {
-		max-width: 235px;
-	}
+	max-width: 538px;
+	width: 100%;
 }
 
 .about-slider__item {

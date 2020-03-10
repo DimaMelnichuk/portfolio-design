@@ -74,7 +74,6 @@
 
 .single__text {
 	margin-bottom: 30px;
-	padding-bottom: 30px;
 	font-size: 18px;
 	line-height: 30px;
 	border-bottom: 1px solid #e5e5e5;
@@ -82,15 +81,14 @@
 	@media (max-width: 1366px) {
 		font-size: 16px;
 		margin-bottom: 20px;
-		padding-bottom: 20px;
 		line-height: 25px;
 	}
 
-	p:last-child {
-		padding-top: 35px;
+	p {
+		padding-bottom: 20px;
 
 		@media (max-width: 1366px) {
-			padding-top: 20px;
+			padding-bottom: 20px;
 		}
 	}
 
