@@ -6,6 +6,18 @@ let gulp = require('gulp'),
 		rename = require('gulp-rename'),
 		del = require('del'),
 		autoprefixer = require('gulp-autoprefixer');
+		gcmq = require('gulp-group-css-media-queries');
+		fileinclude = require('gulp-file-include');
+
+
+gulp.task('fileinclude', function () {
+	return gulp.src('app/.html')
+			.pipe(fileinclude({
+				prefix: '@@',
+				basepath: '@file'
+			}))
+			.pipe(gulp.dest('dist'));
+});	
 
 gulp.task('clean', async function(){
 	del.sync('dist')
@@ -41,6 +53,7 @@ gulp.task('script', function(){
 	return gulp.src('app/js/*.js')
 	.pipe(browserSync.reload({stream: true}))
 });
+
 
 gulp.task('js', function(){
 	return gulp.src([
@@ -78,7 +91,7 @@ gulp.task('export', async function(){
 		.pipe(gulp.dest('dist/img'));
 });
 
-gulp.task('watch',function(){
+gulp.task('watch', function(){
 	gulp.watch('app/scss/**/*.scss', gulp.parallel('scss'));
 	gulp.watch('app/*.html', gulp.parallel('html'))
 	gulp.watch('app/js/*.js', gulp.parallel('script'))
