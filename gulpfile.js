@@ -7,17 +7,8 @@ let gulp = require('gulp'),
 		del = require('del'),
 		autoprefixer = require('gulp-autoprefixer');
 		gcmq = require('gulp-group-css-media-queries');
-		fileinclude = require('gulp-file-include');
 
-
-gulp.task('fileinclude', function () {
-	return gulp.src('app/.html')
-			.pipe(fileinclude({
-				prefix: '@@',
-				basepath: '@file'
-			}))
-			.pipe(gulp.dest('dist'));
-});	
+	
 
 gulp.task('clean', async function(){
 	del.sync('dist')
@@ -30,6 +21,7 @@ gulp.task('scss', function(){
 			overrideBrowserslist: ['last 8 versions']
 		}))
 		.pipe(rename({suffix: '.min'}))
+		.pipe(gcmq())
 		.pipe(gulp.dest('app/css/'))
 		.pipe(browserSync.reload({stream: true}))
 });
