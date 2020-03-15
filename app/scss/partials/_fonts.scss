@@ -1,8 +1,8 @@
 @font-face {
 	font-family: 'Georgia';
-	src: url('../../fonts/georgia/Georgia.woff2') format('woff2'),
-		 url('../../fonts/georgia/Georgia.ttf') format('ttf'),
-		 url('../../fonts/georgia/Georgia.woff') format('woff');
+	src: url('../fonts/georgia/Georgia.woff2') format('woff2'),
+		 url('../fonts/georgia/Georgia.ttf') format('ttf'),
+		 url('../fonts/georgia/Georgia.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -10,11 +10,11 @@
 
 @font-face {
 	font-family: 'icomoon';
-	src:  url('../../fonts/icomoon/icomoon.eot?makwmm');
-	src:  url('../../fonts/icomoon/icomoon.eot?makwmm#iefix') format('embedded-opentype'),
-	  url('../../fonts/icomoon/icomoon.ttf?makwmm') format('truetype'),
-	  url('../../fonts/icomoon/icomoon.woff?makwmm') format('woff'),
-	  url('../../fonts/icomoon/icomoon.svg?makwmm#icomoon') format('svg');
+	src:  url('../fonts/icomoon/icomoon.eot?makwmm');
+	src:  url('../fonts/icomoon/icomoon.eot?makwmm#iefix') format('embedded-opentype'),
+	  url('../fonts/icomoon/icomoon.ttf?makwmm') format('truetype'),
+	  url('../fonts/icomoon/icomoon.woff?makwmm') format('woff'),
+	  url('../fonts/icomoon/icomoon.svg?makwmm#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 	font-display: block;
