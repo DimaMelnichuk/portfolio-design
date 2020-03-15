@@ -1,24 +1,20 @@
 @import "vars";
 
 .info {
-	position: absolute;
-	top: 0;
-	right: 0;
-
-	@media screen and (max-width: 850px) {
-		top: 60px;
-	}
 
 	&__icon {
+		position: absolute;
+		top: 0;
+		right: 0;
 		height: 90px;
 		width: 90px;
 		background-color: $green;
+		color: $white;
+		font-size: 24px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		cursor: pointer;
-		color: $white;
-		font-size: 24px;
 
 		@media (max-width: 1366px) {
 			height: 60px;
@@ -30,6 +26,7 @@
 			height: 50px;
 			width: 50px;
 			font-size: 15px;
+			top: 60px;
 		}
 
 		&::after {
@@ -77,13 +74,12 @@
 		}
 
 		@media screen and (max-width: 850px) {
-			top: 50px;
+			top: 110px;
 			padding: 10px;
 			height: 100px;
 			width: 200px;
 		}
 		
-
 	}
 
 	&__item:not(:last-child) {

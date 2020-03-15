@@ -1,0 +1,21 @@
+.about-event {
+
+	&__list {
+		font-size: 15px;
+		margin-bottom: 25px;
+	}
+
+	&__item:not(:last-child) {
+		margin-bottom: 18px;
+
+		@media (max-width: 1366px) {
+			margin-bottom: 10px;
+		}
+	}
+
+	&__item:before{
+		content: "•";
+		padding-right: 5px;
+	}
+
+}

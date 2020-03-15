@@ -1,7 +1,7 @@
 $(function(){
 
 	/***************** Slick-slider for post ********************/
-  $('.post-slider').slick({
+  $('.page-slider').slick({
 	  arrows: false,
 	  dots: true,
 	  waitForAnimate: false,

@@ -11,7 +11,7 @@ var lazyload = lazyload || {};
 
     lazyload.load = function() {
 
-        var url = "./" + page + ".html";
+        var url = "page-posts/" + page + ".html";
 
         $(buttonId).hide();
         $(loadingId).show();

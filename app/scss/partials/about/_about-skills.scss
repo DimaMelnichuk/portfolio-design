@@ -1,10 +1,14 @@
-.skills__inner {
-	margin-bottom: 30px;
+.about-skills {
+
+	&__inner {
+		margin-bottom: 30px;
+	}
 }
-.skills-item {
+
+.skills-item:not(:last-child) {
 	margin-bottom: 15px;
 }
-.skills-title {
+.skills__header {
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 8px;
@@ -13,16 +17,16 @@
 		margin-bottom: 5px;
 	}
 
-	&__job {
+	&-job {
 		text-transform: capitalize;
 	}
 
-	&__percent {
+	&-percent {
 		color: #000;
 	}
 
 }
-.skills-meter {
+.skills__meter {
 	border: 1px solid #e2e2e2;
 	height: 34px;
 	position: relative;

@@ -16,11 +16,10 @@
 
 	&__map {
 
+
 		img {
 			width: 100%;
 			height: 100%;
-			object-fit: cover;
-			object-position: center;
 		}
 	}
 }
@@ -37,14 +36,13 @@
 		padding: 20px;
 	}
 
-	@media screen and (max-width: 1180px) {
+	@media (max-width: 1180px) {
 		position: relative;
 		width: 85%;
 		margin: 0;
-		top: -4px;
 	}
 
-	@media screen and (max-width: 850px) {
+	@media (max-width: 850px) {
 		width: 100%;
 	}
 
@@ -75,45 +73,27 @@
 	}
 }
 
-.form__inner {
-	display: flex;
-	justify-content: space-between;
-
-	@media screen and (max-width: 500px) {
-		flex-direction: column;	
-	}
-
-}
-.form__column {
-	flex-basis: 49%;
-	display: flex;
-	flex-direction: column;
+form input {
+	margin-left: 10px;
+	width: 100%;
+	height: 46px;
 }
 form input,
 form textarea{
 	padding: 23px;
-	border: 1px solid #eaeaea;
+	border: none;
 	resize: none;
-	width: 100%;
+	border-left: 1px solid #eaeaea;
 
 	@media (max-width: 1366px) {
 		padding: 15px;
 	}
-
-	@media screen and (max-width: 500px) {
-		margin-bottom: 10px;
-	}
 	
-}
-form input[type='email'] {
-	margin: 10px 0;
-	@media screen and (max-width: 500px) {
-		margin: 0 0 10px 0;
-	}
 }
 form textarea {
 	height: 100%;
 	margin-bottom: 10px;
+	border: 1px solid #eaeaea;
 }
 form button {
 	background-color: $green;
@@ -135,4 +115,55 @@ form button {
 }
 ::placeholder {
 	color: #a3a3a3;
+}
+
+.form {
+
+	// .form__inner
+
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+	
+		@media (max-width: 500px) {
+			flex-direction: column;	
+		}
+	}
+
+	// .form__column
+
+	&__column {
+		flex-basis: 49%;
+		display: flex;
+		flex-direction: column;
+	}
+
+	// .form__input
+
+	&__input {
+		border: 1px solid #eaeaea;
+		padding-left: 10px;
+		height: 48px;
+		display: flex;
+		align-items: center;
+
+		&:not(:last-child) {
+			margin-bottom: 10px;
+		}
+
+		@media (max-width: 500px) {
+			margin-bottom: 10px;
+		}
+
+		i {
+			width: 32px;
+			height: 28px;
+			border: 1px solid $green;
+			border-radius: 100%;
+			color: $green;
+			text-align: center;
+			line-height: 28px;
+			font-size: 13px;
+		}
+	}
 }

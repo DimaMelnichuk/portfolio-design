@@ -4,53 +4,52 @@
 @import "partials/vars";
 @import "partials/fonts";
 
-/* home-content */
-@import "partials/home/content";
+/* main-content */
+@import "partials/content/content";
 
 /* info */
 @import "partials/info";
 
-
-@import "partials/services";
-
 /* aside-header */
-@import "partials/aside-header/copiryght";
+@import "partials/aside-header/aside-header";
+@import "partials/aside-header/menu";
+@import "partials/aside-header/logo";
 @import "partials/aside-header/filter";
-@import "partials/aside-header/header";
 @import "partials/aside-header/social-links";
+@import "partials/aside-header/copiryght";
 
 /* contact */
 @import "partials/contact/contact";
 
 /* about */
-@import "partials/about/about-general";
-@import "partials/about/about-services";
+@import "partials/about/about";
+@import "partials/about/about-event";
 @import "partials/about/about-skills";
-@import "partials/about/about-staff";
-@import "partials/about/about-testimonials";
+@import "partials/about/about-partners";
 @import "partials/about/about-info";
 
 /* single work and post */
-@import "partials/single/single-general";
-@import "partials/single/single-post";
-@import "partials/single/single-tags";
-@import "partials/single/single-archives";
-@import "partials/single/single-gallery";
-@import "partials/single/single-projects";
-@import "partials/single/single-features";
-@import "partials/single/single-info";
-@import "partials/single/single-comments";
+@import "partials/page/page";
+@import "partials/page/page-post";
+@import "partials/page/page-tags";
+@import "partials/page/page-archives";
+@import "partials/page/page-gallery";
+@import "partials/page/page-projects";
+@import "partials/page/page-features";
+@import "partials/page/page-info";
+@import "partials/page/page-comments";
+@import "partials/page/page__title";
+@import "partials/page/page__text";
 
 /* blog */
+@import "partials/blog/blog";
 @import "partials/blog/gallery-post";
-@import "partials/blog/general-blog";
-@import "partials/blog/link-post";
 @import "partials/blog/img-post";
 @import "partials/blog/quota-post";
 @import "partials/blog/video-post";
 @import "partials/blog/standart-post";
-@import "partials/blog/aside-post";
 @import "partials/blog/button-blog";
+@import "partials/blog/post-content";
 
 /* ==========================================================================
 	General Styles
@@ -73,8 +72,6 @@ body {
   min-width: 320px;
   overflow-x: hidden;
 }
-	/* hidden scroll */
-/* ::-webkit-scrollbar {display:none;} */
 
 ul, ol {
   margin: 0;
@@ -104,5 +101,3 @@ img {
 	text-transform: capitalize;
 	transition: all .3s;
 }
-
-@import "partials/media";

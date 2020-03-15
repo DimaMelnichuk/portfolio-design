@@ -1,22 +1,22 @@
 @import "../../partials/vars";
 
 .social-links {
-	padding-right: 24px;
-	margin-bottom: 20px;
-
-	@media (max-width: 1366px) {
-		padding-right: 24px;
-		margin-bottom: 10px;
-	}
-
-	@media screen and (max-width: 850px) {
-		display: none;
-	}
 
 	&__list {
 		display: flex;
 		justify-content: flex-end;
 		flex-wrap: wrap;
+		padding-right: 24px;
+		margin-bottom: 20px;
+	
+		@media (max-width: 1366px) {
+			padding-right: 24px;
+			margin-bottom: 10px;
+		}
+	
+		@media screen and (max-width: 850px) {
+			display: none;
+		}
 
 	}
 

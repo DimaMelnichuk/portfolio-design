@@ -1,9 +1,8 @@
 @import "../vars";
-@import "general-blog";
 
 
-.button-blog {
-	display: block;
+.blog-button {
+	display: inline-block;
 	position: absolute;
 	cursor: pointer;
 	bottom: -100px;
