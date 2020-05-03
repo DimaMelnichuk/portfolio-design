@@ -1,5 +1,4 @@
 # Object file
 node_modules/*
 dist/*
-icomoon/*
-*.psd
+templates/*

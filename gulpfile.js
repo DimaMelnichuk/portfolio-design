@@ -7,8 +7,14 @@ let gulp = require('gulp'),
 		del = require('del'),
 		autoprefixer = require('gulp-autoprefixer');
 		gcmq = require('gulp-group-css-media-queries');
+		ghPages = require('gh-pages');
+		path = require('path');
 
-	
+
+function deploy(cb) {
+	ghPages.publish(path.join(process.cwd(), './dist'), cb);
+}
+exports.deploy = deploy;
 
 gulp.task('clean', async function(){
 	del.sync('dist')
@@ -18,7 +24,7 @@ gulp.task('scss', function(){
 	return gulp.src('app/scss/**/*.scss')
 		.pipe(sass({outputStyle: 'compressed'}))
 		.pipe(autoprefixer({
-			overrideBrowserslist: ['last 8 versions']
+			overrideBrowserslist: ['last 5 versions']
 		}))
 		.pipe(rename({suffix: '.min'}))
 		.pipe(gcmq())
