@@ -1,0 +1,29 @@
+.header-mobile {
+
+	@media (max-width: 850px) {
+		position: fixed;
+		z-index: 15;
+		background-color: #242b2e;
+		height: 60px;
+		width: 100%;
+	}
+
+	// .header-mobile__logo
+
+	&__logo {
+		height: 60px;
+
+		img {
+
+			@media (max-width: 850px) {
+				height: 60px;
+				width: 25%;
+			}
+
+			@media (max-width: 650px) {
+				width: 35%;
+			}
+
+		}
+	}
+}

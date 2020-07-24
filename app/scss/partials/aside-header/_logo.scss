@@ -5,10 +5,22 @@
 		height: 80px;
 	}
 
-	@media screen and (max-width: 850px) {
-		width: 100px;
+	@media (max-width: 850px) {
 		height: 60px;
 		z-index: 3;
+		position: relative;
+
+		&::after {
+			content: "";
+			position: absolute;
+			display: block;
+			content: "";
+			background-color: #242b2e;;
+			opacity: 0.1;
+			height: 100%;
+			width: 1px;
+			left: 0;
+		}
 	}
 
 	img {

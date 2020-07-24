@@ -4,7 +4,7 @@ $(function(){
   $('.page-slider').slick({
 	  arrows: false,
 	  dots: true,
-	  waitForAnimate: false,
+
   });
 
   $('.gallery-post__slider').slick({
@@ -18,7 +18,4 @@ $(function(){
 		waitForAnimate: false,
   });
 
-
-
-  
 });

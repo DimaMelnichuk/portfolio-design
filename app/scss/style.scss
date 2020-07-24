@@ -12,6 +12,7 @@
 
 /* aside-header */
 @import "partials/aside-header/aside-header";
+@import "partials/aside-header/header-mobile";
 @import "partials/aside-header/menu";
 @import "partials/aside-header/logo";
 @import "partials/aside-header/filter";
@@ -59,7 +60,8 @@
 *::after {
   box-sizing: border-box;
 }
-
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
 html {
   scroll-behavior: smooth;
 }
@@ -72,7 +74,9 @@ body {
   min-width: 320px;
   overflow-x: hidden;
 }
-
+body.lock {
+	overflow: hidden;
+}
 ul, ol {
   margin: 0;
   padding: 0; 

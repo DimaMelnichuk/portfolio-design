@@ -16,8 +16,9 @@ $(function(){
 
 	/***************** Menu-btn ********************/
 	$(".menu__burger").click(function(event){
-		$(".menu__burger,.menu").toggleClass("active");
-		});
+		$(".menu__burger,.aside-header").toggleClass("active");
+		$("body").toggleClass("lock");
+	});
 	
 
 });

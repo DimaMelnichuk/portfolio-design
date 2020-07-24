@@ -130,11 +130,12 @@
 		}
 	}
 
-	&__column {
-
-	}
 
 	textarea {
-		margin-top: 10px;
+		
+
+		@media (max-width: 1170px) {
+			margin-top: 10px;
+		}
 	}
 }

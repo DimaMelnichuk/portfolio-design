@@ -1,11 +1,5 @@
-@import "../../partials/vars";
-
 .filter {
 	padding-right: 24px;
-
-	@media (max-width: 850px) {
-		display: none;
-	}
 
 	&__title {
 		color: $green;
