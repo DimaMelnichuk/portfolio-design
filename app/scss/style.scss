@@ -4,90 +4,80 @@
 @import "partials/vars";
 @import "partials/fonts";
 
-/* main-content */
-@import "partials/content/content";
-
-/* info */
-@import "partials/info";
+/* blocks */
+@import "blocks/info";
+@import "blocks/header-mobile";
 
 /* aside-header */
-@import "partials/aside-header/aside-header";
-@import "partials/aside-header/header-mobile";
-@import "partials/aside-header/menu";
-@import "partials/aside-header/logo";
-@import "partials/aside-header/filter";
-@import "partials/aside-header/social-links";
-@import "partials/aside-header/copiryght";
+@import "blocks/aside-header/aside-header";
+@import "blocks/aside-header/menu";
+@import "blocks/aside-header/logo";
+@import "blocks/aside-header/filter";
+@import "blocks/aside-header/social-links";
+@import "blocks/aside-header/copiryght";
+
+/* content */
+@import "blocks/content/content";
 
 /* contact */
-@import "partials/contact/contact";
+@import "blocks/contact/contact";
 
 /* about */
-@import "partials/about/about";
-@import "partials/about/about-event";
-@import "partials/about/about-skills";
-@import "partials/about/about-partners";
-@import "partials/about/about-info";
+@import "blocks/about/about-event";
+@import "blocks/about/about-skills";
+@import "blocks/about/about-partners";
+@import "blocks/about/about-info";
 
 /* single work and post */
-@import "partials/page/page";
-@import "partials/page/page-post";
-@import "partials/page/page-tags";
-@import "partials/page/page-archives";
-@import "partials/page/page-gallery";
-@import "partials/page/page-projects";
-@import "partials/page/page-features";
-@import "partials/page/page-info";
-@import "partials/page/page-comments";
-@import "partials/page/page__title";
-@import "partials/page/page__text";
+@import "blocks/page/page";
+@import "blocks/page/page-post";
+@import "blocks/page/page-tags";
+@import "blocks/page/page-archives";
+@import "blocks/page/page-gallery";
+@import "blocks/page/page-projects";
+@import "blocks/page/page-features";
+@import "blocks/page/page-info";
+@import "blocks/page/page-comments";
+@import "blocks/page/page__title";
+@import "blocks/page/page__text";
 
 /* blog */
-@import "partials/blog/blog";
-@import "partials/blog/gallery-post";
-@import "partials/blog/img-post";
-@import "partials/blog/quota-post";
-@import "partials/blog/video-post";
-@import "partials/blog/standart-post";
-@import "partials/blog/button-blog";
-@import "partials/blog/post-content";
+@import "blocks/blog/blog";
+@import "blocks/blog/gallery-post";
+@import "blocks/blog/img-post";
+@import "blocks/blog/quota-post";
+@import "blocks/blog/standart-post";
+@import "blocks/blog/button-blog";
+@import "blocks/blog/post-content";
 
 /* ==========================================================================
 	General Styles
 ========================================================================== */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
 :focus,:active{outline: none;}
 a:focus,a:active{outline: none;}
-html {
-  scroll-behavior: smooth;
-}
-
+nav,footer,header,aside{display: block;}
+html {scroll-behavior: smooth;}
+html,body{font-family: $font-family;height:100%;width:100%;font-size:100%;line-height:1;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+::placeholder {color: #a3a3a3;}
 body {
-  font-family: $font-family;
-  font-weight: $normal; 
   background-color: #b4b7b8;
   /* doesn't see the scroll */
   min-width: 320px;
   overflow-x: hidden;
-}
-body.lock {
+
+  &.lock {
 	overflow: hidden;
-}
-ul, ol {
-  margin: 0;
-  padding: 0; 
-}
-
-ul li {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
+	}
 }
 
 p {
@@ -104,4 +94,8 @@ img {
 	display: inline-block;
 	text-transform: capitalize;
 	transition: all .3s;
+}
+
+.mixitup-control-active {
+	color: $white;
 }

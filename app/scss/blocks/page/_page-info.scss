@@ -1,0 +1,41 @@
+.page-info {
+
+	&__list {
+		margin-bottom: 30px;
+
+		@media (max-width: 1366px) {
+			margin-bottom: 20px;
+		}
+	}
+
+	&__item {
+		padding-bottom: 15px;
+		margin-bottom: 15px;
+		border-bottom: 1px solid #e5e5e5;
+
+		@media (max-width: 1366px) {
+			padding-bottom: 10px;
+			margin-bottom: 10px;
+		}
+		
+		i {
+			display: inline-block;
+			width: 35px;
+			height: 35px;
+			line-height: 35px;
+			text-align: center;
+			border: 1px solid $green;
+			border-radius: 50%;
+			color: $green;
+			margin-right: 15px;
+
+			@media (max-width: 1366px) {
+				margin-right: 10px;
+				width: 30px;
+				height: 30px;
+				line-height: 30px;
+				font-size: 14px;
+			}
+		}
+	}
+}

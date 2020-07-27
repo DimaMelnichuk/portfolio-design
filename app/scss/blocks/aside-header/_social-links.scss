@@ -1,0 +1,33 @@
+.social-links {
+
+	&__list {
+		display: flex;
+		justify-content: flex-end;
+		flex-wrap: wrap;
+		padding: 0px 24px 0px 10px;
+		margin-bottom: 20px;
+	
+		@media (max-width: 1366px) {
+			padding: 0px 20px 0px 10px;
+			margin-bottom: 10px;
+		}
+
+	}
+
+	&__item {
+		margin: 0px 0px 0px 10px;
+
+		&:first-child {
+			margin: 0px 0px 0px 0px;
+		}
+
+		@media (max-width: 1366px) {
+			margin: 0px 0px 0px 5px;
+		}
+	}
+
+	&__item-img {
+		height: 25px;
+		width: 25px;
+	}
+}

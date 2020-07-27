@@ -1,0 +1,41 @@
+.page-gallery {
+	margin-bottom: 20px;
+	// .post-gallery__img
+
+	&__img-row {
+		display: flex;
+		flex-flow: row wrap;
+		margin: -5px;
+
+		img {
+			height: 100%;
+			width: 100%;
+		}
+
+		a {
+			display: block;
+			width: 100%;
+			height: 125px;
+			overflow: hidden;
+			outline: none;
+
+			@media (max-width: 1366px) {
+				height: 90px;
+			}
+
+			@media (max-width: 950px) {
+				height: 115px;
+			}
+
+			@media (max-width: 480px) {
+				height: 78px;
+			}
+		}
+	}
+
+	&__img-column {
+		flex: 0 1 33.333%;
+		padding: 5px;
+	}
+
+}

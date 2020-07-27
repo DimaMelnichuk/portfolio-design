@@ -1,0 +1,52 @@
+.about-skills {
+
+	&__inner {
+		margin-bottom: 30px;
+	}
+
+	&__item {
+
+		&:not(:last-child) {
+			margin-bottom: 15px;
+		}
+	}
+
+	&__header {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 8px;
+	
+		@media (max-width: 1366px) {
+			margin-bottom: 5px;
+		}
+	
+		&-job {
+			text-transform: capitalize;
+		}
+	
+		&-percent {
+			color: #000;
+		}
+	}
+
+	&__meter {
+		border: 1px solid #e2e2e2;
+		height: 34px;
+		position: relative;
+	
+		@media (max-width: 1366px) {
+			height: 25px;
+		}
+	
+		span {
+			position: absolute;
+			background-color: #e2e2e2;
+			height: 32px;
+	
+			@media (max-width: 1366px) {
+				height: 23px;
+			}
+		}
+	
+	}
+}

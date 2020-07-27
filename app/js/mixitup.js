@@ -1,6 +1,5 @@
 $(function(){
 
-	/***************** mixitup ********************/
-		var mixer = mixitup('.content');
+	var mixer = mixitup('.content');
 
-	});
+});

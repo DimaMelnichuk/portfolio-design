@@ -1,0 +1,35 @@
+.quota-post {
+	background-color: #242b2e;
+	color: $white;
+	padding: 35px 25px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	// .quota-post__text
+
+	&__text {
+		font-style: italic;
+		font-size: 21px;
+		line-height: 26px;
+		font-weight: $medium;
+		margin-bottom: 20px;
+	}
+
+	&__quote::after {
+		content: "\201c";
+		font-size: 90px;
+		display: block;
+		margin-top: -20px;
+		margin-bottom: -50px;
+		font-family: 'Roboto';
+		color: $green;
+	}
+	// .quota-post__author
+
+	&__author {
+		color: $green;
+		font-size: 18px;
+	}
+}
