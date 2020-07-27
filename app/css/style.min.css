@@ -282,6 +282,7 @@
   text-align: right;
   top: 0;
   left: 0;
+  overflow: auto;
 }
 
 .aside-header.active {
@@ -1088,7 +1089,7 @@
 .gallery-post__slider {
   position: relative;
   overflow: hidden;
-  max-width: 300px;
+  max-width: 100%;
   height: 180px;
 }
 
@@ -1879,7 +1880,7 @@ img {
 
   .aside-header {
     position: fixed;
-    top: 60px;
+    padding: 60px 0px 0px 0px;
     z-index: 12;
     background-color: #242b2e;
     width: 25%;

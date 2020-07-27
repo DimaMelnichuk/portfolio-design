@@ -7,11 +7,12 @@
 	text-align: right;
 	top: 0;
 	left: 0;
+	overflow: auto;
 	/* box-shadow: 15px 0px 35px 10px rgba(0,0,0,0.6); */
 
 	@media (max-width: 850px) {
 		position: fixed;
-		top: 60px;
+		padding: 60px 0px 0px 0px;
 		z-index: 12;
 		background-color: $header-bg;
 		width: 25%;
