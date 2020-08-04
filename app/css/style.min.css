@@ -644,9 +644,7 @@
   padding: 23px;
 }
 
-.contact__form-input:hover,
 .contact__form-input:focus,
-.contact__form-message:hover,
 .contact__form-message:focus {
   border: 1px solid #2db8b7;
 }
