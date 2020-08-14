@@ -18,4 +18,12 @@
 		}
 	}
 
+	&-link {
+		color: $green;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
 }

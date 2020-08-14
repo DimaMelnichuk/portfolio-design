@@ -1,7 +1,9 @@
 .post-content {
 
 	&:hover {
-		
+		.post-content__title {
+			color: $green;
+		}
 	}
 
 	&__body {
@@ -22,7 +24,6 @@
 	&__title {
 		font-size: 18px;
 		color: #000;
-
 		line-height: 18px;
 		width: 100%;
 		height: calc(18px * 3);
@@ -30,10 +31,6 @@
 		display: -webkit-box;
 		-webkit-line-clamp: 3;
 		-webkit-box-orient: vertical;
-
-		&:hover {
-			color: $green;
-		}
 
 		@media (max-width: 1366px) {
 			font-size: 16px;

@@ -9,6 +9,8 @@
 	}
 
 	&__item {
+		display: flex;
+		align-items: center;
 		padding-bottom: 15px;
 		margin-bottom: 15px;
 		border-bottom: 1px solid #e5e5e5;
@@ -19,11 +21,11 @@
 		}
 		
 		i {
-			display: inline-block;
+			display: flex;
+			align-items: center;
+			justify-content: center;
 			width: 35px;
 			height: 35px;
-			line-height: 35px;
-			text-align: center;
 			border: 1px solid $green;
 			border-radius: 50%;
 			color: $green;

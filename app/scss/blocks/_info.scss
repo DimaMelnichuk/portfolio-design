@@ -77,8 +77,14 @@
 		
 	}
 
-	&__item:not(:last-child) {
+	&__item {
+		display: flex;
+		align-items: center;
 		margin-bottom: 15px;
+
+		&:last-child {
+			margin: 0;
+		}
 	}
 
 	&__link {

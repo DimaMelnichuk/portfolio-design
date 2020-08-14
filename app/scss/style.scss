@@ -68,7 +68,7 @@ a,a:visited{text-decoration: none;}
 a:hover{text-decoration: none;}
 ul li{list-style: none;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
-::placeholder {color: #a3a3a3;}
+::placeholder {color: #a3a3a3;text-transform: capitalize;}
 body {
   background-color: #b4b7b8;
   /* doesn't see the scroll */
