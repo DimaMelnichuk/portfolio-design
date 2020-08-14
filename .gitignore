@@ -1,4 +1,4 @@
 # Object file
 node_modules/*
+app/template/*
 dist/*
-templates/*

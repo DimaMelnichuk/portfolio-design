@@ -8,12 +8,7 @@
 		max-width: 100%;
 		height: 180px;
 
-		@media (max-width: 1366px) {
-			max-width: 300px;
-		}
-
 		@media (max-width: 480px) {
-			max-width: 428px;
 			height: 230px;
 		}
 	}

@@ -1,14 +1,22 @@
 .post-content {
-	padding: 15px;
-	color: #9a9a9a;
-	display: flex;
-	flex-direction: column;
-	height: 85px;
-	border-bottom: 1px solid #e3e3e3;
 
-	@media (max-width: 1366px) {
-		padding: 10px;
+	&:hover {
+		
 	}
+
+	&__body {
+		padding: 15px;
+		color: #9a9a9a;
+		display: flex;
+		flex-direction: column;
+		height: 85px;
+		border-bottom: 1px solid #e3e3e3;
+	
+		@media (max-width: 1366px) {
+			padding: 10px;
+		}
+	}
+
 	// .post-content__title
 
 	&__title {

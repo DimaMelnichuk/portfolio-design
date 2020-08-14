@@ -3,6 +3,10 @@
 	position: absolute;
 	left: 17%;
 
+	@media (max-width: 1000px) {
+		left: 22%;
+	}
+
 	@media (max-width: 950px) {
 		margin: 15px;
 	}

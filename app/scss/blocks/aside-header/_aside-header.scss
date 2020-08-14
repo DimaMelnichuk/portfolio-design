@@ -7,10 +7,16 @@
 	text-align: right;
 	top: 0;
 	left: 0;
-	overflow: auto;
+	display: flex;
+	flex-direction: column;
 	/* box-shadow: 15px 0px 35px 10px rgba(0,0,0,0.6); */
 
+	@media (max-width: 1000px) {
+		width: 22%;
+	}
+
 	@media (max-width: 850px) {
+		overflow: auto;
 		position: fixed;
 		padding: 60px 0px 0px 0px;
 		z-index: 12;
