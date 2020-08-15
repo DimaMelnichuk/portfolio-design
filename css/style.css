@@ -2155,6 +2155,10 @@ img {
 }
 
 @media (max-width: 480px) {
+  .page {
+    margin: 0px;
+  }
+
   .page-gallery__img-row a {
     height: 78px;
   }
