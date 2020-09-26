@@ -43,6 +43,8 @@ menuBurger.addEventListener("click", function (e) {
 	menuLock.classList.toggle('lock');
 });
 
+
+
 /***************** Modal info********************/
 let info_icon = document.querySelector('.info__icon');
 let info_list = document.querySelector('.info__list');
@@ -93,6 +95,3 @@ testWebP(function (support) {
 if (document.querySelector('.wrapper')) {
 	document.querySelector('.wrapper').classList.add('loaded');
 }
-
-
-var mixer = mixitup('.content');
