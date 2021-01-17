@@ -19,7 +19,7 @@ $(function(){
 		autoplaySpeed: 5000,
   });
 
-  /***************** Masonry blog ********************/
+  /***************** Masonry grid-blog ********************/
   $('.blog__items').masonry({
 		itemSelector: '.blog__item',
 		layoutMode: 'fitRows',
@@ -28,6 +28,7 @@ $(function(){
 
 });
 
+/***************** Active menu item ********************/
 const currentLocation = this.location.href;
 const menuItem = document.querySelectorAll('a');
 const menuLenght = menuItem.length
@@ -63,7 +64,6 @@ document.documentElement.addEventListener("click", function (e) {
 		info_list.classList.remove('active');
 	}
 });
-
 
 /***************** Overlay on click  ********************/
 document.querySelectorAll('.content__item').forEach((item) =>
