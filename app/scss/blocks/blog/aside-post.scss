@@ -1,0 +1,23 @@
+.aside-post {
+   padding: 18px 25px;
+	background: #242b2e;
+	border-left: 15px solid #1ab5b3;
+	box-shadow: 0 0 8px #787878;
+	// .aside-post__title
+
+	&__title {
+		color: #fff;
+		font-size: 18px;
+		font-weight: 300;
+		margin: 0px 0px 10px 0px;
+	}
+
+	// .aside-post__text
+
+	&__text {
+		color: #9c9c9c;
+		font-size: 13px;
+		font-weight: 300;
+		line-height: 20px;
+	}
+}

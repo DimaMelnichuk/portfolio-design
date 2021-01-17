@@ -1,0 +1,111 @@
+.about-team {
+
+	@media (max-width: 950px) {
+		margin: 0px 0px 20px 0px;
+	}
+	// .about-team__row
+
+	&__row {
+		display: flex;
+		flex-wrap: wrap;
+		margin: -10px;
+	}
+
+	// .about-team__column
+
+	&__column {
+		flex: 0 1 33.333%;
+		padding: 10px;
+
+		@media (max-width: 1200px) {
+			flex: 0 1 50%;
+		}
+
+		@media (max-width: 950px) {
+			flex: 0 1 33.333%;
+		}
+
+		@media (max-width: 750px) {
+			flex: 0 1 33.333%;
+		}
+
+		@media (max-width: 550px) {
+			flex: 0 1 50%;
+		}
+
+		@media (max-width: 380px) {
+			flex: 0 1 100%;
+		}
+	}
+
+	// .about-team__item
+
+	&__item {
+		padding: 0px 0px 90% 0px;
+		overflow: hidden;
+		position: relative;
+
+		@media (max-width: 380px) {
+			padding: 0px 0px 70% 0px;
+		}
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			position: absolute;
+			top: 0;
+			left: 0;
+			filter: grayscale(100%); 
+		}
+
+		&:hover {
+			.about-team__overlay {
+				opacity: 1;
+				visibility: visible;
+				transform: translateX(0px);
+			}
+		}
+	}
+
+	// .about-team__overlay
+
+	&__overlay {
+		position: absolute;
+		background-color: #1ab5b3;
+		color: #fff;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		opacity: 0;
+		visibility: hidden;
+		transform: translateX(-100px);
+		transition: all .2s;
+	}
+
+	// .about-team__overlay-name
+
+	&__overlay-name {
+		font-size: 16px;
+		font-family: 'Roboto', sans-serif;
+		font-weight: 600;
+		text-transform: uppercase;
+		margin: 0px 0px 3px 0px;
+	}
+
+	// .about-team__overlay-job
+
+	&__overlay-job {
+		font-size: 13px;
+		font-family: 'Roboto', sans-serif;
+		font-weight: 300;
+		text-transform: capitalize;
+	}
+
+}

@@ -1,45 +1,70 @@
 .blog {
-	margin: 25px;
-	position: absolute;
-	left: 17%;
+	position: relative;
+	margin-left: 17%;
 
 	@media (max-width: 1000px) {
-		left: 22%;
-	}
-
-	@media (max-width: 950px) {
-		margin: 15px;
+		margin-left: 22%;
 	}
 
 	@media (max-width: 850px) {
-		left: 0;
+		margin-left: 0%;
 		top: 60px;
 	}
 
-	@media (max-width: 480px) {
-		margin: 15px;
+	&__items {
+		margin: -10px;
 	}
 
-	&__inner {
-		display: grid;
-		grid-template-columns: repeat(5, minmax(200px, auto));
-		grid-gap: 15px;
+	&__item {
+		width: 20%;
+		padding: 10px;
 	
 		@media (max-width: 1366px) {
-			grid-template-columns: repeat(4, minmax(200px, auto));
+			width: 25%;
 		}
 	
 		@media (max-width: 1150px) {
-			grid-template-columns: repeat(3, minmax(200px, auto));
+			width: 33.333%;
 		}
 	
 		@media (max-width: 700px) {
-			grid-template-columns: repeat(2, minmax(200px, auto));
+			width: 50%;
 		}
 	
 		@media (max-width: 480px) {
-			grid-template-columns: repeat(1, minmax(200px, auto));
+			width: 100%;
+		}
+	}
+
+	&__body {
+		margin: 25px;
+
+		@media (max-width: 950px) {
+			margin: 15px;
 		}
 
+		@media (max-width: 480px) {
+			margin: 15px;
+		}
+	}
+
+	&__btn {
+		display: block;
+		margin: 20px auto;
+		width: 185px;
+		padding: 16px;
+		background: #1ab5b3;
+		color: #fff;
+		font-size: 20px;
+		font-weight: 300;
+		text-transform: uppercase;
+		text-align: center;
+		transition: background-color .3s;
+
+		@media (min-width: 850px) {			
+			&:hover {
+				background-color: #48D3BC;
+			}
+		}
 	}
 }

@@ -7,6 +7,7 @@
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+	box-shadow: 0 0 8px #787878;
 	// .quota-post__text
 
 	&__text {
@@ -18,13 +19,12 @@
 	}
 
 	&__quote::after {
-		content: "\201c";
-		font-size: 90px;
-		display: block;
-		margin-top: -20px;
-		margin-bottom: -50px;
-		font-family: 'Roboto';
-		color: $green;
+		content: "";
+		display: inline-block;
+		width: 23px;
+		height: 17px;
+		margin: 0px 0px 10px 0px;
+		background: url("../img/blog/quote.png") 0 0 no-repeat;
 	}
 	// .quota-post__author
 

@@ -1,4 +1,4 @@
-.social-links {
+.media-links {
 
 	&__list {
 		display: flex;
@@ -16,14 +16,30 @@
 
 	&__item {
 		margin: 0px 0px 10px 10px;
+		transition: transform .3s;
+
+		@media (min-width: 850px) {
+			&:hover {
+				transform: scale(1.2);
+			}
+		}
 
 		@media (max-width: 1366px) {
 			margin: 0px 0px 5px 5px;
+		}
+
+		@media (max-width: 480px) {
+			margin: 0px 0px 10px 10px;
 		}
 	}
 
 	&__item-img {
 		height: 25px;
 		width: 25px;
+
+		@media (max-width: 480px) {
+			height: 35px;
+			width: 35px;
+		}
 	}
 }

@@ -1,19 +1,15 @@
 .page-info {
 
-	&__list {
-		margin-bottom: 30px;
-
-		@media (max-width: 1366px) {
-			margin-bottom: 20px;
-		}
-	}
-
 	&__item {
 		display: flex;
 		align-items: center;
 		padding-bottom: 15px;
 		margin-bottom: 15px;
 		border-bottom: 1px solid #e5e5e5;
+
+		&:last-child {
+			margin: 0;
+		}
 
 		@media (max-width: 1366px) {
 			padding-bottom: 10px;

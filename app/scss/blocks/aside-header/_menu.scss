@@ -13,28 +13,52 @@
 	// .menu__link
 
 	&__link {
-		display: block;
+		position: relative;
+		display: inline-block;
 		text-transform: uppercase;
-		background-color: #2f373b;
+		background-image: linear-gradient(to bottom, #333B3F 0%, #2E363A 100%);
 		border-bottom: 1px solid #202426;
 		padding: 24px 24px;
 		color: $white;
 		font-size: 18px;
 		font-weight: $light;
-		transition: background-color .3s;
+		width: 100%;
 
 		@media (max-width: 1366px) {
 			padding: 15px 20px;
 			font-size: 16px;
 		}
 
-		&:hover {
-			background-color: $green;
+		&::after {
+			position: absolute;
+			content: '';
+			top: 0;
+			left: 0;
+			width: 0;
+			height: 100%;
+			transition: all .2s linear;
+			background: #1ab5b3;
+		}
+
+		span {
+			position: relative;
+			z-index: 2;
+		}
+
+		@media (min-width: 850px) {			
+			&:hover  {
+				&::after {
+					width: 100%;
+				}
+			}
 		}
 
 		&.active {
-			background-color: $green;
+			&::after {
+				width: 100%;
+			}
 		}
+
 	}
 
 	// .menu__burger

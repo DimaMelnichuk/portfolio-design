@@ -1,0 +1,17 @@
+.page-archives {
+
+	&__item {
+		margin-bottom: 15px;
+	}
+
+	&__link {
+		color: #000;
+		transition: color .2s;
+
+		@media (min-width: 850px) {
+			&:hover {
+				color: $green;
+			}
+		}
+	}
+}

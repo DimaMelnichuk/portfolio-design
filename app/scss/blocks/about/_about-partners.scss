@@ -1,18 +1,9 @@
 .about-partners {
-	
-	@media (max-width: 950px) {
-		margin-bottom: 20px;
-	}
 
 	&__row{
 		display: flex;
 		flex-flow: row wrap;
 		margin: -10px;
-
-/* 		@media (max-width: 390px) {
-			flex-direction: column;
-			align-items: center;
-		} */
 	}
 
 	&__column {

@@ -8,15 +8,23 @@ $(function(){
   });
 
   $('.gallery-post__slider').slick({
-
+		speed: 300,
   });
 
-  $('.testi-slider').slick({
+  $('.about-testimonials__slider').slick({
 		arrows: false,
+		dots: false,
+		speed: 300,
 		autoplay: true,
 		autoplaySpeed: 5000,
-		waitForAnimate: false,
   });
+
+  /***************** Masonry blog ********************/
+  $('.blog__items').masonry({
+		itemSelector: '.blog__item',
+		layoutMode: 'fitRows',
+		percentPosition: true,
+ });
 
 });
 
@@ -42,8 +50,6 @@ menuBurger.addEventListener("click", function (e) {
 	asideHeader.classList.toggle('active');
 	menuLock.classList.toggle('lock');
 });
-
-
 
 /***************** Modal info********************/
 let info_icon = document.querySelector('.info__icon');

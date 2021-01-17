@@ -19,6 +19,7 @@
 		position: relative;
 		flex-basis: 25%;
 		height: 100%;
+		overflow: hidden;
 
 		@media (max-width: 1100px) {
 			flex-basis: 33.333%;
@@ -35,16 +36,17 @@
 		@media (min-width: 850px) {
 			&:hover .content__overlay{
 				opacity: 1;
+				transform: translateX(0);
 			}
 		}
 
 	}
 
 	&__item--active {
-
 		.content__overlay {
 			display: flex;
 			visibility: visible;
+			transform: translateX(0);
 		}
 	}
 
@@ -84,7 +86,8 @@
 		padding: 15px;
 		text-align: center;
 		color: $white;
-		transition: opacity .3s;
+		transform: translateX(-100px);
+		transition: opacity .3s, transform .3s;
 
 		@media (max-width: 850px) {
 			opacity: 1;

@@ -1,0 +1,36 @@
+.link-post {
+	background: #1ab5b3;
+	padding: 20px 30px;
+	text-align: center;
+	box-shadow: 0 0 8px #787878;
+	// .link-post__text
+
+	&__text {
+		font-size: 18px;
+		line-height: 26px;
+		margin: 0px 0px 5px 0px;
+		
+		p {
+			color: #fff;
+		}
+	}
+
+	// .link-post__link
+
+	&__link {
+		display: inline-block;
+		color: #fff;
+		font-size: 14px;
+		line-height: 26px;
+		font-weight: 700;
+		font-style: italic;
+		border-bottom: 1px solid transparent;
+		transition: border .2s;
+
+		@media (min-width: 850px) {
+			&:hover {
+				border-bottom: 1px solid #fff;
+			}
+		}
+	}
+}
