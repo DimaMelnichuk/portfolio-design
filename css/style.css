@@ -1838,6 +1838,39 @@ body.lock {
   overflow: hidden;
 }
 
+.preloader {
+  position: fixed;
+  overflow: visible;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  z-index: 9999;
+}
+
+.preloader img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.preloader.visible {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: opacity 1s linear;
+  -o-transition: opacity 1s linear;
+  transition: opacity 1s linear;
+}
+
+.preloader.hidden {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: visibility 0s 1s, opacity 1s linear;
+  -o-transition: visibility 0s 1s, opacity 1s linear;
+  transition: visibility 0s 1s, opacity 1s linear;
+}
+
 p {
   margin: 0;
   color: #a3a3a3;
