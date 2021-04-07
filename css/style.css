@@ -1838,6 +1838,25 @@ body.lock {
   overflow: hidden;
 }
 
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.page {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
 .preloader {
   position: fixed;
   overflow: visible;
@@ -2454,7 +2473,7 @@ img {
 
   .content {
     left: 0;
-    top: 60px;
+    padding: 60px 0px 0px 0px;
   }
 
   .content__item {
@@ -2481,7 +2500,7 @@ img {
 
   .blog {
     margin-left: 0%;
-    top: 60px;
+    padding: 60px 0px 0px 0px;
   }
 
   .img-post__overlay {
