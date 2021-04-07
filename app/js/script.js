@@ -1,2 +1,2 @@
 @@include('components/function.js')
-@@include('components/lazy-load-img.js')
+@@include('components/lazy-loading.js')
