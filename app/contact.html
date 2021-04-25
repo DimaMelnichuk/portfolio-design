@@ -16,7 +16,7 @@
 			<div class="contact__content">
 				<div class="contact__title">Get in touch</div>
 				<div class="contact__descr">If you have any questions, feel free to contact me and I'll get back to you as soon as possible.</div>
-				<form action="#" class="contact__form">
+				<form action="#" id="form" class="contact__form">
 					<div class="contact__title">Send me a message</div>
 					<div class="contact__form-row">
 						<div class="contact__form-column">
@@ -24,23 +24,23 @@
 								<div class="contact__form-icon">
 									<i class="icon-user"></i>
 								</div>
-								<input class="contact__form-input" type="text"  placeholder="Name" required>
+								<input class="contact__form-input _req" type="text"  placeholder="Name">
 							</label>
 							<label class="contact__form-label">
 								<div class="contact__form-icon">
 									<i class="icon-envelope"></i>
 								</div>
-								<input class="contact__form-input" type="email" placeholder="e-mail" required>
+								<input class="contact__form-input _req _email" type="email" placeholder="e-mail">
 							</label>
 							<label class="contact__form-label">
 								<div class="contact__form-icon">
 									<i class="icon-chain"></i>
 								</div>
-								<input class="contact__form-input" type="text" placeholder="website" required>
+								<input class="contact__form-input _req" type="text" placeholder="website">
 							</label>
 						</div>
 						<div class="contact__form-column">
-							<textarea class="contact__form-message" placeholder="Message" required></textarea>
+							<textarea class="contact__form-message _req" placeholder="Message"></textarea>
 							<button class="contact__form-btn">send now!</button>
 						</div>
 					</div>
